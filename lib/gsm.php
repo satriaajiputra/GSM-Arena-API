@@ -55,7 +55,7 @@ class Gsm
 		$result = array();
 		
 		// Run cURL
-		$url  = 'http://www.gsmarena.com/results.php3?sQuickSearch=yes&sName='.urlencode($q);
+		$url  = 'https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName='.urlencode($q);
 		$ngecurl = $this->mycurl($url);
 				
 		// Jika situs yang di cURL lagi offline/maintenance maka akan menampilkan error message
@@ -96,7 +96,7 @@ class Gsm
 		$result = array();
 			
 		// Run cURL
-		$url  = 'http://www.gsmarena.com/'.str_replace($this->kata, $this->simbol, $slug).'.php';
+		$url  = 'https://www.gsmarena.com/'.str_replace($this->kata, $this->simbol, $slug).'.php';
 		$ngecurl = $this->mycurl($url);
 				
 		// Jika situs yang di cURL lagi offline/maintenance maka akan menampilkan error message
